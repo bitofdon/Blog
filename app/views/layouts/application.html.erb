@@ -4,11 +4,14 @@
     <title><%= yield(:page_title) %> | Blog</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+  	<%= render 'layouts/navbar' %>
+  	<div class="container <%= controller_name %> <%= action_name %>">
+    	<%= yield %>
+    </div>
   </body>
 </html>
