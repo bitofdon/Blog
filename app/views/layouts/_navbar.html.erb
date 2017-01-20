@@ -29,11 +29,11 @@
     <a class='navbar-brand' href='/'>
       Cryptocurrency<span class='light'>blog</span>
     </a>
-    <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data target="#exCollapsingNavbar">
+    <button type="button" class="navbar-toggler hidden-sm-up pull-xs-right" data-toggle="collapse" data target="#exCollapsingNavbar" aria-expanded="true">
       &#9776;
      </button>
   
-     <ul class="nav navbar-nav pull-right hidden-xs-down">
+     <ul class="nav navbar-nav pull-sm-right hidden-xs-down">
       <li class="nav-item">
         <%= link_to 'Blog', root_path, class: "nav-link #{yield(:blog_active)}" %>        
       </li>
