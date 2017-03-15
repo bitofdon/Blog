@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
+gem 'tinymce-rails', '~> 4.3'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -42,8 +43,6 @@ gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.
 
 gem 'annotate'
 gem 'will_paginate', '~> 3.1.0'
-
-gem 'tinymce-rails', '~> 4.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
